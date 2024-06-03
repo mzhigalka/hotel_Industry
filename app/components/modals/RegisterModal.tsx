@@ -1,16 +1,16 @@
 "use client"
 import React, { useCallback, useState } from 'react'
 import axios from 'axios'
-import { AiFillGithub } from 'react-icons/ai'
-import { FcGoogle } from "react-icons/fc"
+// import { AiFillGithub } from 'react-icons/ai'
+// import { FcGoogle } from "react-icons/fc"
 import { type FieldValues, type SubmitHandler, useForm } from "react-hook-form"
 import useRegisterModal from '@/app/hooks/useRegisterModal'
 import Modal from './Modal'
 import Heading from '../Heading'
 import Input from '../inputs/Input'
 import toast from "react-hot-toast"
-import Button from '../Button'
-import { signIn } from 'next-auth/react'
+// import Button from '../Button'
+// import { signIn } from 'next-auth/react'
 import useLoginModal from '@/app/hooks/useLoginModal'
 
 const RegisterModal = () => {
@@ -86,18 +86,18 @@ const RegisterModal = () => {
 	const footerContent = (
 		<div className='flex flex-col gap-4 mt-3'>
 			<hr />
-			<Button
+			{/* <Button
 				outline
 				label='Continue with Goole'
 				icon={FcGoogle}
 				onClick={() => signIn("google")}
-			/>
-			<Button
+			/> */}
+			{/* <Button
 				outline
 				label='Continue with GitHub'
 				icon={AiFillGithub}
 				onClick={() => signIn("github")}
-			/>
+			/> */}
 			<div className='text-neutral-500 text-center mt-4 font-light'>
 				<div className='flex flex-row gap-2 items-center justify-center'>
 					<div>
